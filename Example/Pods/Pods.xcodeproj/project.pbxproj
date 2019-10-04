@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		1C1A0E20516A9A66470348E888C5EF46 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = testPods/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		22D7239DA183893039616A51FAD0E72B /* testPods.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = testPods.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		22D7239DA183893039616A51FAD0E72B /* testCj123Pods.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = testCj123Pods.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		2304CE2F64EEF87BF0C967A8E9C29B5C /* testPods-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "testPods-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3B28DFE9E0D60A4639903316CAF61BB5 /* testPods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "testPods-umbrella.h"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			children = (
 				AA2B506F6772D2A4E1534D0D3D48E3FA /* LICENSE */,
 				5197325F5582FB5DAF6EAF739EF50B68 /* README.md */,
-				22D7239DA183893039616A51FAD0E72B /* testPods.podspec */,
+				22D7239DA183893039616A51FAD0E72B /* testCj123Pods.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
