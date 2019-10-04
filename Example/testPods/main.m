@@ -8,9 +8,11 @@
 
 @import UIKit;
 #import "CJPODAppDelegate.h"
-
+#import "TestPerson.h"
 int main(int argc, char * argv[])
 {
+    TestPerson *person = [[TestPerson alloc]init];
+    [person eat];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([CJPODAppDelegate class]));
     }

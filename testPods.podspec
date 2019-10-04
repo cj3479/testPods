@@ -23,20 +23,20 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/cj3479/testPods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'cj3479' => 'jackjcheng@tencent.com' }
-  s.source           = { :git => 'https://github.com/cj3479/testPods.git', :tag => s.version.to_s }
+  #s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'cj3479' => 'cj3479@126.com.com' }
+  s.source           = { :git => 'https://github.com/cj3479/testPods.git', :branch => "master" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'testPods/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'testPods' => ['testPods/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'testPods' => ['testPods/Assets/*']
+   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 2.5'
 end
