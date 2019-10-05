@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'testCj123Pods'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = 'iOS 防Crash库'
 
 # This description is used to generate tags and improve search results.
@@ -39,12 +39,11 @@ TODO: Add long description of the pod here.
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
-  spec.info_plist = {
-    'CFBundleIdentifier' => 'com.myorg.MyLib',
+  s.info_plist = {
     'MY_VAR' => 'SOME_VALUE'
   }
-  spec.frameworks = 'QuartzCore', 'CoreData'
-  spec.weak_framework = 'Twitter'
-  spec.libraries = 'xml2'
-  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.frameworks = 'QuartzCore', 'CoreData'
+  s.weak_framework = 'Twitter'
+  s.libraries = 'xml2'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end
