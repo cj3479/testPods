@@ -40,8 +40,14 @@ TODO: Add long description of the pod here.
   s.dependency 'AFNetworking', '~> 2.5'
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
-    'MY_VAR' => 'SOME_VALUE'
+    'CFBundleDevelopmentRegion' => 'ko_KR'
   }
+  s.app_spec 'HostApp' do |app|
+  app.info_plist = {
+    'CFBundleIdentifier' => 'com.myorg.MyApplication',
+    'abcde' => 'chengjian'
+  }
+  end
   s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
   s.frameworks = 'QuartzCore', 'CoreData'
