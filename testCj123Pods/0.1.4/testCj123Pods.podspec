@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
   s.info_plist = {
-    'CFBundleIdentifier' => 'org.cocoapods.testPods',
+    'CFBundleIdentifier' => 'org.cocoapods.testCj123Pods',
     'CFBundleDevelopmentRegion' => 'ko_KR'
   }
   s.app_spec 'HostApp' do |app|
