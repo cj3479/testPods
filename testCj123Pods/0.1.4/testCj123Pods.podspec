@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
     'MY_VAR' => 'SOME_VALUE'
   }
   s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
-  s.vendored_libraries = ['Frameworks/libTestStaticLib2.a']
+  s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
   s.frameworks = 'QuartzCore', 'CoreData'
   s.weak_framework = 'Twitter'
   s.libraries = 'xml2'
