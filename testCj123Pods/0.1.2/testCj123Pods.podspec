@@ -39,4 +39,11 @@ TODO: Add long description of the pod here.
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
+  s.info_plist = {
+    'MY_VAR' => 'SOME_VALUE'
+  }
+  s.frameworks = 'QuartzCore', 'CoreData'
+  s.weak_framework = 'Twitter'
+  s.libraries = 'xml2'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end
