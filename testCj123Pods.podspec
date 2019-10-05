@@ -5,7 +5,6 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
-
 Pod::Spec.new do |s|
   s.name             = 'testCj123Pods'
   s.version          = '0.1.4'
@@ -33,15 +32,18 @@ TODO: Add long description of the pod here.
   s.source_files = 'testPods/Classes/**/*'
   
    s.resource_bundles = {
-     'testPods' => ['testPods/Assets/*']
+     'testPods' => ['testPods/Assets/*','testPods/test/*']
    }
 
-  #s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'testPods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
   s.info_plist = {
+    'CFBundleIdentifier' => 'com.myorg.MyLib',
     'MY_VAR' => 'SOME_VALUE'
   }
+  s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
+  s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
   s.frameworks = 'QuartzCore', 'CoreData'
   s.weak_framework = 'Twitter'
   s.libraries = 'xml2'
