@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
   }
   s.app_spec 'HostApp' do |app|
   app.info_plist = {
-    'CFBundleIdentifier' => 'com.myorg.MyApplication',
+    'CFBundleIdentifier' => 'org.cocoapods.testPods',
     'abcde' => 'chengjian'
   }
   end
