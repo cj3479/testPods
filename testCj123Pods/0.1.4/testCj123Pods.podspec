@@ -39,15 +39,9 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
   s.info_plist = {
-    'CFBundleIdentifier' => 'org.cocoapods.testCj123Pods',
-    'CFBundleDevelopmentRegion' => 'ko_KR'
+    'CFBundleIdentifier' => 'com.myorg.MyLib',
+    'MY_VAR' => 'SOME_VALUE'
   }
-  s.app_spec 'HostApp' do |app|
-  app.info_plist = {
-    'CFBundleIdentifier' => 'org.cocoapods.testPods',
-    'abcde' => 'chengjian'
-  }
-  end
   s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
   s.frameworks = 'QuartzCore', 'CoreData'
