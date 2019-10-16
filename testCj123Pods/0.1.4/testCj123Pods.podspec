@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT' }
   s.author           = { 'cj3479' => 'cj3479@126.com.com' }
-  s.source           = { :git => 'https://github.com/cj3479/testPods.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/cj3479/testPods.git', :tag => s.version.to_s}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -38,6 +38,8 @@ TODO: Add long description of the pod here.
   s.public_header_files = 'testPods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
+  s.dependency 'QBNetwork'
+  s.static_framework = true
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
     'MY_VAR' => 'SOME_VALUE'
