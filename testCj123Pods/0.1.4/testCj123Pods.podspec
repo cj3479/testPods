@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
   s.public_header_files = 'testPods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
-  s.dependency 'QBNetwork'
+  #s.dependency 'QBNetwork'
   s.static_framework = true
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
