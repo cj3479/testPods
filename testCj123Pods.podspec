@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
 
   s.public_header_files = 'testPods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  #s.dependency 'AFNetworking', '~> 2.5'
+  s.dependency 'AFNetworking', '~> 2.5'
   s.dependency 'QBNetwork'
   #s.static_framework = true
   s.info_plist = {
@@ -52,4 +52,13 @@ TODO: Add long description of the pod here.
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+    s.subspec 'cjsub' do |spec|
+    spec.requires_arc = true
+    spec.public_header_files = [
+    public_header_files = 'testPods/Classes1/**/*.h'
+    ]
+    spec.source_files = [
+    s.source_files = 'testPods/Classes1/**/*'
+    ]
+  end
 end
