@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
   s.dependency 'QBNetwork'
-  s.static_framework = true
+  #s.static_framework = true
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
     'MY_VAR' => 'SOME_VALUE'
@@ -48,6 +48,7 @@ TODO: Add long description of the pod here.
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
   s.frameworks = 'QuartzCore', 'CoreData'
   s.weak_framework = 'Twitter'
-  s.libraries = 'xml2'
+  #s.libraries = 'xml2'
+  s.libraries = 'xml2', 'resolv', 'xslt.1','stdc++', 'z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end
