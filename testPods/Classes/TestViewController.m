@@ -6,7 +6,7 @@
 //
 
 #import "TestViewController.h"
-#import "TestPerson0.h"
+//#import "TestPerson0.h"
 @interface TestViewController ()
 
 @end
@@ -14,7 +14,7 @@
 @implementation TestViewController
 
 - (void)viewDidLoad {
-    TestPerson0 *p0 = [TestPerson0 new];
+//    TestPerson0 *p0 = [TestPerson0 new];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
