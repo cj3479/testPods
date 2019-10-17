@@ -24,23 +24,22 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT' }
   s.author           = { 'cj3479' => 'cj3479@126.com.com' }
-  #s.source           = { :git => 'https://github.com/cj3479/testPods.git', :tag => s.version.to_s}
-  s.source           = { :git => 'https://github.com/cj3479/testPods.git', :branch => 'develop'}
+  s.source           = { :git => 'https://github.com/cj3479/testPods.git', :tag => s.version.to_s}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   #s.ios.deployment_target = '10.0'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'testPods/Classes0/**/*'
+  s.source_files = 'testPods/Classes/**/*'
   
    s.resource_bundles = {
      'testPods' => ['testPods/Assets/*','testPods/test/*']
    }
 
-  s.public_header_files = 'testPods/Classes0/**/*.h'
+  s.public_header_files = 'testPods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
-  #s.dependency 'QBNetwork'
+  s.dependency 'QBNetwork'
   #s.static_framework = true
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
@@ -48,19 +47,18 @@ TODO: Add long description of the pod here.
   }
   s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
-  #s.frameworks = 'QuartzCore', 'CoreData'
-  #s.weak_framework = 'Twitter'
+  s.frameworks = 'QuartzCore', 'CoreData'
+  s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  s.subspec 'cjsub' do |spec|
-		spec.requires_arc = true
-		s.public_header_files = 'testPods/Classes/**/*.h'
-	 	s.source_files = 'testPods/Classes/**/*'
-  end
-	s.subspec 'cjsub1' do |spec|
-		spec.requires_arc = true
-		spec.public_header_files = 'testPods/Classes1/**/*.h'
-		spec.source_files = 'testPods/Classes1/**/*'
+    s.subspec 'cjsub' do |spec|
+    spec.requires_arc = true
+    spec.public_header_files = [
+    public_header_files = 'testPods/Classes1/**/*.h'
+    ]
+    spec.source_files = [
+    s.source_files = 'testPods/Classes1/**/*'
+    ]
   end
 end
