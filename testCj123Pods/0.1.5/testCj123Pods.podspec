@@ -48,19 +48,22 @@ TODO: Add long description of the pod here.
   }
   s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
-  #s.frameworks = 'QuartzCore', 'CoreData'
-  #s.weak_framework = 'Twitter'
+  s.frameworks = 'QuartzCore', 'CoreData'
+  s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  s.subspec 'cjsub' do |spec|
+    
+	s.subspec 'cjsub' do |spec|
 		spec.requires_arc = true
-		s.public_header_files = 'testPods/Classes/**/*.h'
-	 	s.source_files = 'testPods/Classes/**/*'
+		spec.public_header_files = 'testPods/Classes/**/*.h'
+		spec.source_files = 'testPods/Classes/**/*'
+		spec.dependency 'testCj123Pods/cjsub1'
   end
-	s.subspec 'cjsub1' do |spec|
-		spec.requires_arc = true
-		spec.public_header_files = 'testPods/Classes1/**/*.h'
-		spec.source_files = 'testPods/Classes1/**/*'
+  
+  s.subspec 'cjsub1' do |spec|
+    spec.requires_arc = true
+    spec.public_header_files = 'testPods/Classes1/**/*.h'
+    spec.source_files = 'testPods/Classes1/**/*'
   end
 end
