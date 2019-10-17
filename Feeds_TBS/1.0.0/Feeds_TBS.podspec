@@ -27,10 +27,9 @@ Pod::Spec.new do |s|
   end
   
   #s.frameworks = 'WebKit.framework'
-
+ s.libraries = 'xml2', 'resolv', 'xslt.1','stdc++', 'z'
  s.subspec 'PureMode' do |spec|
     spec.requires_arc = true
-    spec.libraries = 'xml2', 'resolv', 'xslt.1','stdc++', 'z'
     spec.public_header_files = [
     'QBWebView/QBWebView/PureMode/**/*.h'
     ]
