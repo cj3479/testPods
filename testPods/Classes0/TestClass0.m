@@ -6,7 +6,11 @@
 //
 
 #import "TestClass0.h"
-
+#import "TestPerson.h"
 @implementation TestClass0
-
+-(void)testCl{
+    NSLog(@"testCl");
+    TestPerson *per = [TestPerson new];
+    [per eat];
+}
 @end
