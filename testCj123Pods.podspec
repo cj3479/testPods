@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'testCj123Pods'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'iOS 防Crash库'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/cj3479/testPods.git', :tag => s.version.to_s}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  #s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'testPods/Classes/**/*'
   
@@ -37,9 +38,9 @@ TODO: Add long description of the pod here.
 
   s.public_header_files = 'testPods/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 2.5'
+  #s.dependency 'AFNetworking', '~> 2.5'
   s.dependency 'QBNetwork'
-  s.static_framework = true
+  #s.static_framework = true
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
     'MY_VAR' => 'SOME_VALUE'
@@ -48,6 +49,7 @@ TODO: Add long description of the pod here.
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
   s.frameworks = 'QuartzCore', 'CoreData'
   s.weak_framework = 'Twitter'
-  s.libraries = 'xml2'
+  #s.libraries = 'xml2'
+  s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end

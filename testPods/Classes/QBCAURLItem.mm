@@ -6,7 +6,6 @@
 //
 
 #import "QBCAURLItem.h"
-
 @implementation QBCAURLItem
 
 - (instancetype)init
