@@ -56,14 +56,14 @@ TODO: Add long description of the pod here.
     
 	s.subspec 'cjsub' do |spec|
 		spec.requires_arc = true
-		spec.public_header_files = 'testPods/Classes/**/*.h'
-		spec.source_files = 'testPods/Classes/**/*'
+		spec.public_header_files = 'testPods/Classes/*.h'
+		spec.source_files = 'testPods/Classes/*'
 		spec.dependency 'testCj123Pods/cjsub1'
   end
   
   s.subspec 'cjsub1' do |spec|
     spec.requires_arc = true
-    spec.public_header_files = 'testPods/Classes1/**/*.h'
-    spec.source_files = 'testPods/Classes1/**/*'
+    spec.public_header_files = 'testPods/Classes1/*.h'
+    spec.source_files = 'testPods/Classes1/*'
   end
 end
