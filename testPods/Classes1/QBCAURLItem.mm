@@ -6,6 +6,7 @@
 //
 
 #import "QBCAURLItem.h"
+#import "TestPerson.h"
 @implementation QBCAURLItem
 
 - (instancetype)init
@@ -29,6 +30,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
+    TestPerson *persion = [TestPerson alloc];
     [encoder encodeObject: self.url forKey: @"url"];
     [encoder encodeObject: @(self.bQuit) forKey: @"bQuit"];
 }

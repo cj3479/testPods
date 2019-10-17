@@ -7,11 +7,8 @@
 
 #import "TestPerson.h"
 #import "AFURLSessionManager.h"
-#import "QBCAURLItem.h"
 @implementation TestPerson
 -(void)eat{
-    QBCAURLItem *item = [QBCAURLItem new];
-    NSLog(@"chengjian_person eat item=%@",item);
     NSLog(@"File downloaded ");
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
