@@ -6,9 +6,9 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'testCj123Pods'
+  s.name             = 'testlj'
   s.version          = '0.1.4'
-  s.summary          = 'iOS 防Crash库'
+  s.summary          = 'iOS 防Crash库11111'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
