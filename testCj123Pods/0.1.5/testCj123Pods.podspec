@@ -31,16 +31,16 @@ TODO: Add long description of the pod here.
   #s.ios.deployment_target = '10.0'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'testPods/Classes/**/*'
+  s.source_files = 'testPods/Classes0/**/*'
   
    s.resource_bundles = {
      'testPods' => ['testPods/Assets/*','testPods/test/*']
    }
 
-  s.public_header_files = 'testPods/Classes/**/*.h'
+  s.public_header_files = 'testPods/Classes0/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
-  s.dependency 'QBNetwork'
+  #s.dependency 'QBNetwork'
   #s.static_framework = true
   s.info_plist = {
     'CFBundleIdentifier' => 'com.myorg.MyLib',
@@ -48,18 +48,21 @@ TODO: Add long description of the pod here.
   }
   s.vendored_frameworks = ['Frameworks/TestDMlib2.framework']
   s.vendored_libraries = ['Frameworks/libTestStaticLib55.a']
-  s.frameworks = 'QuartzCore', 'CoreData'
-  s.weak_framework = 'Twitter'
+  #s.frameworks = 'QuartzCore', 'CoreData'
+  #s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-	s.subspec 'cjsub' do |spec|
+  s.subspec 'cjsub' do |spec|
 		spec.requires_arc = true
-		spec.public_header_files = [
-		public_header_files = 'testPods/Classes1/**/*.h'
+	 	s.source_files = 'testPods/Classes/**/*'
+
+  	s.public_header_files = 'testPods/Classes/**/*.h'
+  end
+	s.subspec 'cjsub1' do |spec|
+		spec.requires_arc = true
+		spec.public_header_files = ['testPods/Classes1/**/*.h'
 		]
-		spec.source_files = [
-		s.source_files = 'testPods/Classes1/**/*'
-		]
+		spec.source_files = ['testPods/Classes1/**/*']
   end
 end
