@@ -55,14 +55,12 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.subspec 'cjsub' do |spec|
 		spec.requires_arc = true
+		s.public_header_files = 'testPods/Classes/**/*.h'
 	 	s.source_files = 'testPods/Classes/**/*'
-
-  	s.public_header_files = 'testPods/Classes/**/*.h'
   end
 	s.subspec 'cjsub1' do |spec|
 		spec.requires_arc = true
-		spec.public_header_files = ['testPods/Classes1/**/*.h'
-		]
-		spec.source_files = ['testPods/Classes1/**/*']
+		spec.public_header_files = 'testPods/Classes1/**/*.h'
+		spec.source_files = 'testPods/Classes1/**/*'
   end
 end
