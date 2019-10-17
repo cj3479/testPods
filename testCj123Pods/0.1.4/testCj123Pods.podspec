@@ -50,6 +50,6 @@ TODO: Add long description of the pod here.
   s.frameworks = 'QuartzCore', 'CoreData'
   s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
-  s.libraries = 'xml2', 'resolv', 'xslt.1','stdc++', 'z'
+  s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 end
