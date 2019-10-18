@@ -33,9 +33,9 @@ TODO: Add long description of the pod here.
 
   #s.source_files = 'testPods/Classes0/**/*'
   
-   s.resource_bundles = {
-     'testPods' => ['testPods/Assets/*','testPods/test/*']
-   }
+   #s.resource_bundles = {
+    # 'testPods' => ['testPods/Assets/*','testPods/test/*']
+   #}
 
   #s.public_header_files = 'testPods/Classes0/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
@@ -54,11 +54,11 @@ TODO: Add long description of the pod here.
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
   #s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => "testPods/Classes1"}
   
-  s.subspec 'all' do |spec|
-		spec.dependency 'testCj123Pods/cjsub0'
-		spec.dependency 'testCj123Pods/cjsub1'
-		spec.dependency 'testCj123Pods/cjsub2'
-  end
+  #s.subspec 'all' do |spec|
+	#	spec.dependency 'testCj123Pods/cjsub0'
+	#	spec.dependency 'testCj123Pods/cjsub1'
+	#	spec.dependency 'testCj123Pods/cjsub2'
+  #end
   
   s.subspec 'cjsub0' do |spec|
 		spec.requires_arc = true
