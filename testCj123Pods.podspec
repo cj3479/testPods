@@ -52,12 +52,21 @@ TODO: Add long description of the pod here.
   s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-   
+  #s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => "testPods/Classes1"}
+  
+  s.subspec 'all' do |spec|
+		spec.dependency 'testCj123Pods/cjsub0'
+		spec.dependency 'testCj123Pods/cjsub1'
+		spec.dependency 'testCj123Pods/cjsub2'
+  end
+  
   s.subspec 'cjsub0' do |spec|
 		spec.requires_arc = true
 		spec.public_header_files = 'testPods/Classes0/*.h'
 		spec.source_files = 'testPods/Classes0/*'
+		$dir = File.dirname(__FILE__)
+    $dir = $dir + "/testPods/Classes1/**"
+		#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
 		spec.dependency 'testCj123Pods/cjsub1'
   end
   
@@ -65,6 +74,9 @@ TODO: Add long description of the pod here.
 		spec.requires_arc = true
 		spec.public_header_files = 'testPods/Classes1/*.h'
 		spec.source_files = 'testPods/Classes1/*'
+		$dir = File.dirname(__FILE__)
+		 $dir = $dir + "/testPods/Classes2/**"
+		#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
 		spec.dependency 'testCj123Pods/cjsub2'
   end
   
@@ -72,5 +84,9 @@ TODO: Add long description of the pod here.
     spec.requires_arc = true
     spec.public_header_files = 'testPods/Classes2/*.h'
     spec.source_files = 'testPods/Classes2/*'
+    $dir = File.dirname(__FILE__)
+		 $dir = $dir + "/testPods/Classes0/**"
+		#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
+    spec.dependency 'testCj123Pods/cjsub0'
   end
 end
