@@ -31,13 +31,13 @@ TODO: Add long description of the pod here.
   #s.ios.deployment_target = '10.0'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'testPods/Classes0/**/*'
+  s.source_files = 'testPods/**/**/*'
   
-   s.resource_bundles = {
-     'testPods' => ['testPods/Assets/*','testPods/test/*']
-   }
+   #s.resource_bundles = {
+    # 'testPods' => ['testPods/Assets/*','testPods/test/*']
+   #}
 
-  s.public_header_files = 'testPods/Classes0/**/*.h'
+  s.public_header_files = 'testPods/**/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
   #s.dependency 'QBNetwork'
@@ -52,18 +52,42 @@ TODO: Add long description of the pod here.
   s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-    
-	s.subspec 'cjsub' do |spec|
-		spec.requires_arc = true
-		spec.public_header_files = 'testPods/Classes/*.h'
-		spec.source_files = 'testPods/Classes/*'
-		spec.dependency 'testCj123Pods/cjsub1'
-  end
+  #s.default_subspec = 'cjsub0'
+  #s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => "testPods/Classes1"}
+  # s.exclude_files = "QBWebView/QBWebView//Common/ArkHTTP/**/*.*", "QBWebView/QBWebView/Common/Beacon/Beacon/common/tbs/*.*"
+  #s.subspec 'all' do |spec|
+	#	spec.dependency 'testCj123Pods/cjsub0'
+	#	spec.dependency 'testCj123Pods/cjsub1'
+	#	spec.dependency 'testCj123Pods/cjsub2'
+  #end
+  #
+  #s.subspec 'cjsub0' do |spec|
+	#	spec.requires_arc = true
+	#	spec.public_header_files = 'testPods/Classes0/*.h'
+	#	spec.source_files = 'testPods/Classes0/*'
+	#	$dir = File.dirname(__FILE__)
+  #  $dir = $dir + "/testPods/Classes1/**"
+	#	#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
+	#	#spec.dependency 'testCj123Pods/cjsub1'
+  #end
   
-  s.subspec 'cjsub1' do |spec|
-    spec.requires_arc = true
-    spec.public_header_files = 'testPods/Classes1/*.h'
-    spec.source_files = 'testPods/Classes1/*'
-  end
+	#s.subspec 'cjsub1' do |spec|
+	#	spec.requires_arc = true
+	#	spec.public_header_files = 'testPods/Classes1/*.h'
+	#	spec.source_files = 'testPods/Classes1/*'
+	#	$dir = File.dirname(__FILE__)
+	#	 $dir = $dir + "/testPods/Classes2/**"
+	#	#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
+	#	#spec.dependency 'testCj123Pods/cjsub2'
+  #end
+  
+  #s.subspec 'cjsub2' do |spec|
+  #  spec.requires_arc = true
+  #  spec.public_header_files = 'testPods/Classes2/*.h'
+  #  spec.source_files = 'testPods/Classes2/*'
+  #  $dir = File.dirname(__FILE__)
+	#	 $dir = $dir + "/testPods/Classes0/**"
+	#	#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
+  #  #spec.dependency 'testCj123Pods/cjsub0'
+  #end
 end
