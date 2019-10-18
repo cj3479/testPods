@@ -55,11 +55,11 @@ TODO: Add long description of the pod here.
   #s.default_subspec = 'cjsub0'
   #s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => "testPods/Classes1"}
   # s.exclude_files = "QBWebView/QBWebView//Common/ArkHTTP/**/*.*", "QBWebView/QBWebView/Common/Beacon/Beacon/common/tbs/*.*"
-  #s.subspec 'all' do |spec|
-	#	spec.dependency 'testCj123Pods/cjsub0'
-	#	spec.dependency 'testCj123Pods/cjsub1'
-	#	spec.dependency 'testCj123Pods/cjsub2'
-  #end
+  s.subspec 'all' do |spec|
+		spec.dependency 'testCj123Pods/cjsub0'
+		spec.dependency 'testCj123Pods/cjsub1'
+		spec.dependency 'testCj123Pods/cjsub2'
+  end
   
   s.subspec 'cjsub0' do |spec|
 		spec.requires_arc = true
