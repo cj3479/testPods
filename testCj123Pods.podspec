@@ -52,7 +52,7 @@ TODO: Add long description of the pod here.
   s.weak_framework = 'Twitter'
   #s.libraries = 'xml2'
   s.libraries = 'xml2', 'resolv', 'xslt.1', 'c++','z'
-  s.default_subspec = 'cjsub0'
+  #s.default_subspec = 'cjsub0'
   #s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-lObjC', 'HEADER_SEARCH_PATHS' => "testPods/Classes1"}
   # s.exclude_files = "QBWebView/QBWebView//Common/ArkHTTP/**/*.*", "QBWebView/QBWebView/Common/Beacon/Beacon/common/tbs/*.*"
   #s.subspec 'all' do |spec|
