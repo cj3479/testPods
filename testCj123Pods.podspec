@@ -31,13 +31,13 @@ TODO: Add long description of the pod here.
   #s.ios.deployment_target = '10.0'
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'testPods/Classes0/**/*'
+  #s.source_files = 'testPods/Classes0/**/*'
   
    s.resource_bundles = {
      'testPods' => ['testPods/Assets/*','testPods/test/*']
    }
 
-  s.public_header_files = 'testPods/Classes0/**/*.h'
+  #s.public_header_files = 'testPods/Classes0/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.5'
   #s.dependency 'QBNetwork'
