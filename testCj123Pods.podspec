@@ -67,7 +67,7 @@ TODO: Add long description of the pod here.
 		$dir = File.dirname(__FILE__)
     $dir = $dir + "/testPods/Classes1/**"
 		#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
-		spec.dependency 'testCj123Pods/cjsub1'
+		#spec.dependency 'testCj123Pods/cjsub1'
   end
   
 	s.subspec 'cjsub1' do |spec|
@@ -77,7 +77,7 @@ TODO: Add long description of the pod here.
 		$dir = File.dirname(__FILE__)
 		 $dir = $dir + "/testPods/Classes2/**"
 		#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
-		spec.dependency 'testCj123Pods/cjsub2'
+		#spec.dependency 'testCj123Pods/cjsub2'
   end
   
   s.subspec 'cjsub2' do |spec|
@@ -87,6 +87,6 @@ TODO: Add long description of the pod here.
     $dir = File.dirname(__FILE__)
 		 $dir = $dir + "/testPods/Classes0/**"
 		#spec.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => $dir}
-    spec.dependency 'testCj123Pods/cjsub0'
+    #spec.dependency 'testCj123Pods/cjsub0'
   end
 end
